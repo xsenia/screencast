@@ -7,20 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  public user;
-
   public mycolor = "red";
 
-  constructor() {
+  public user = {
+    name: 'John'
+  };
 
-    setTimeout(() => {
-      this.user = {
-        name: 'John'
-      };
-    },2000);
-    
-
-  }
+  constructor() {}
 
   ngOnInit() {
   }

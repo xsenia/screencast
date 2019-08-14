@@ -8,11 +8,15 @@ import { userInfo } from 'os';
 })
 export class UserCardComponent implements OnInit {
 
-  @Input() user;
+  //@Input() user; сокращенная форма, если имя свойства класса совпадает с именем атрибута
+  @Input('user') user; // ('user') - имя атрибута компонента
   
-  constructor() { }
+  constructor() {
+    console.log('constructor:', this.user);
+  }
 
   ngOnInit() {
+    console.log('ngOnInit:', this.user);
   }
 
 }
