@@ -1,5 +1,3 @@
 <p (click)="changeColor('blue')" [style.color]="mycolor">{{ user.name }} works!</p>
-<input type="text" 
-    (input)="changeColor($event.target.value)" 
-    (keydown.enter)="changeColor('green')"
->
+<input type="text" #colorElement>
+<button (click)="changeColor(colorElement.value)">Сменить цвет</button>
