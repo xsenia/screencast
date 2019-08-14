@@ -1,3 +1,5 @@
-<p (click)="changeColor('blue')" [style.color]="mycolor">{{ user.name }} works!</p>
+<p (click)="changeColor('blue')" [style.color]="mycolor">{{ user?.name }} works!</p>
 <input type="text" #colorElement>
 <button (click)="changeColor(colorElement.value)">Сменить цвет</button>
+
+<app-user-card [user]="user"></app-user-card>
