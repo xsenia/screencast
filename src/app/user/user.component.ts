@@ -11,26 +11,19 @@ export class UserComponent implements OnInit {
     name: "John"
   };
 
-  public myclass = "red";
+  public mycolor = "red";
 
   constructor() {
 
-    setTimeout(() => {
-        this.myclass="green";
+    
 
-        setTimeout(() => {
-          this.myclass="blue";
-      }, 2000);
-
-    }, 2000);
-
-  }
-
-  random() {
-    return Math.random();
   }
 
   ngOnInit() {
+  }
+
+  changeColor(color) {
+    this.mycolor = color;
   }
 
 }
