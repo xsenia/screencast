@@ -11,7 +11,20 @@ export class UserComponent implements OnInit {
     name: "John"
   };
 
-  constructor() { }
+  public myclass = "red";
+
+  constructor() {
+
+    setTimeout(() => {
+        this.myclass="green";
+
+        setTimeout(() => {
+          this.myclass="blue";
+      }, 2000);
+
+    }, 2000);
+
+  }
 
   random() {
     return Math.random();
