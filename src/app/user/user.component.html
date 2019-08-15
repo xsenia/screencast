@@ -1,21 +1,7 @@
-<p (click)="changeColor('blue')" [style.color]="mycolor">{{ user?.name }} works!</p>
-<input type="text" #colorElement>
-<button (click)="changeColor(colorElement.value)">Сменить цвет</button>
-
-<app-user-card [user]="user"></app-user-card>
-
-<p *ngIf="isShown">Директива *ngIf</p>
-
-<button (click)="isShown = !isShown">Скрыть</button>
-
-<ul>
-    <li *ngFor="let i of [1,2,3,4,5]">
-        {{ i }}
-    </li>
-</ul>
+<h1>Выбираем - {{ selectedUser?.name }}</h1>
 
 <ul>
     <li *ngFor="let user of users">
-        {{ user.name }}
+        <app-user-card [user]="user"  (userSelected)="selectedUser = user"></app-user-card>
     </li>
 </ul>

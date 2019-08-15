@@ -20,6 +20,8 @@ export class UserComponent implements OnInit {
     {name: 'Terry'}
   ];
 
+  public selectedUser ;
+
   constructor() {}
 
   ngOnInit() {

@@ -9,3 +9,15 @@
 .blue {
     color: blue;
 }
+
+ul {
+    display: flex;
+    justify-content: space-between
+}
+
+li {
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px;
+}
