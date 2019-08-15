@@ -3,3 +3,19 @@
 <button (click)="changeColor(colorElement.value)">Сменить цвет</button>
 
 <app-user-card [user]="user"></app-user-card>
+
+<p *ngIf="isShown">Директива *ngIf</p>
+
+<button (click)="isShown = !isShown">Скрыть</button>
+
+<ul>
+    <li *ngFor="let i of [1,2,3,4,5]">
+        {{ i }}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let user of users">
+        {{ user.name }}
+    </li>
+</ul>

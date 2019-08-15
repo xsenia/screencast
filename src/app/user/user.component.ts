@@ -13,6 +13,13 @@ export class UserComponent implements OnInit {
     name: 'John'
   };
 
+  public users = [
+    {name: 'John'},
+    {name: 'Mary'},
+    {name: 'Gary'},
+    {name: 'Terry'}
+  ];
+
   constructor() {}
 
   ngOnInit() {
