@@ -10,7 +10,12 @@ export class UserComponent implements OnInit {
   public mycolor = "red";
 
   public user = {
-    name: 'John'
+    name: 'John',
+    age: 23
+  };
+
+  public car = {
+    name: 'Toyota'
   };
 
   constructor() {}
